@@ -21,14 +21,4 @@ def Stream(cap,cv2):
     frame = cv2.resize(frame, size)
 
 
-    #  convert RGB Frame to Black & White FRAME
-    Gray =  cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
-
-    #DISPLAY THE FRAME CAPTURE  BY WEBCAME 
-    cv2.imshow("Gray & RGB", frame)
-
-        
-def Stream_Socket():
-
-    cv2.imshow()
+    return frame
